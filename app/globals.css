@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: rgb(186, 104, 75);
+  --text-secondary: #808080;
+
+  /* Add missing radius variable */
+  --radius: 0.5rem;
+
+  /* Add other CSS variables that might be used */
+  --border: 215 16% 87%;
+  --input: 215 16% 87%;
+  --ring: 215 16% 87%;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white overflow-x-hidden;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] .mr-1 {
+    margin-right: 0;
+    margin-left: 0.25rem;
+  }
+
+  [dir="rtl"] .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
+  [dir="rtl"] .mr-3 {
+    margin-right: 0;
+    margin-left: 0.75rem;
+  }
+
+  [dir="rtl"] .mr-4 {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+
+  [dir="rtl"] .ml-1 {
+    margin-left: 0;
+    margin-right: 0.25rem;
+  }
+
+  [dir="rtl"] .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+
+  [dir="rtl"] .ml-3 {
+    margin-left: 0;
+    margin-right: 0.75rem;
+  }
+
+  [dir="rtl"] .ml-4 {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  [dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  [dir="rtl"] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  /* Explicitly define rounded corners to prevent purging */
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .rounded-full {
+    border-radius: 9999px;
+  }
+}
+
+@layer components {
+  .container-7xl {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full box-border;
+  }
+
+  /* Update the btn-primary class to ensure rounded corners */
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90 transition-colors rounded-md;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-text-secondary mb-10;
+  }
+
+  .header-transparent {
+    @apply bg-transparent text-white;
+  }
+
+  .header-solid {
+    @apply bg-white text-gray-800 shadow-md;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  /* Tooltip styles */
+  .tooltip {
+    @apply absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1.5 px-3 rounded whitespace-nowrap opacity-0 invisible transition-all duration-200;
+  }
+
+  .tooltip:after {
+    content: "";
+    @apply absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800;
+  }
+
+  .tooltip-trigger:hover .tooltip {
+    @apply opacity-100 visible -top-10;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(186, 104, 75, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(7, 208, 186, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(7, 208, 186, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Update the hero-section class to properly handle mobile viewports */
+.hero-section {
+  height: 100vh; /* Fallback */
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: calc(var(--vh, 1vh) * 100); /* Ensure it doesn't exceed viewport */
+  overflow: hidden; /* Prevent scrolling within the hero section */
+}
+
+/* Ensure all buttons have rounded corners */
+button,
+.btn,
+.button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  @apply rounded-md;
+}
+
+/* Ensure all cards and info boxes have rounded corners */
+.rounded-lg,
+.card,
+.info-card,
+[class*="bg-white bg-opacity-10"] {
+  @apply rounded-md;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-2xl mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-base mb-6;
+  }
+
+  .container-7xl {
+    @apply px-3;
+  }
+}
