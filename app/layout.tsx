@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Zenurri Palms | Villas de Luxe à Marrakech",
+    title: "Zenurri Palms",
     description:
       "Découvrez nos villas de luxe à Marrakech, conçues pour offrir un mode de vie exceptionnel dans un cadre enchanteur.",
     url: "https://zenurripalms.com",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://zenurripalms.com/wp-content/uploads/2020/02/WhatsApp-Image-2023-10-10-at-12.53.23-1.jpeg",
+        url: "/heroimage.jpeg",
         width: 1200,
         height: 630,
         alt: "Zenurri Palms Villas de Luxe",
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zenurri Palms | Villas de Luxe à Marrakech",
+    title: "Zenurri Palms",
     description:
       "Découvrez nos villas de luxe à Marrakech, conçues pour offrir un mode de vie exceptionnel dans un cadre enchanteur.",
-    images: ["https://zenurripalms.com/wp-content/uploads/2020/02/WhatsApp-Image-2023-10-10-at-12.53.23-1.jpeg"],
+    images: ["/heroimage.jpeg"],
   },
   robots: {
     index: true,
@@ -87,17 +87,17 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="https://zenurripalms.com/wp-content/uploads/2020/02/cropped-palms-fav-32x32.png"
+          href="/favicon.png"
           sizes="32x32"
         />
         <link
           rel="icon"
-          href="https://zenurripalms.com/wp-content/uploads/2020/02/cropped-palms-fav-192x192.png"
+          href="/favicon.png"
           sizes="192x192"
         />
         <link
           rel="apple-touch-icon"
-          href="https://zenurripalms.com/wp-content/uploads/2020/02/cropped-palms-fav-180x180.png"
+          href="/favicon.png"
         />
         <meta name="theme-color" content="#07d0ba" />
       </head>
