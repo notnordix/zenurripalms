@@ -205,7 +205,7 @@ const Header = () => {
             </div>
 
             {/* CTA Button */}
-            <a href="/brochure.pdf" download aria-label="Download brochure">
+            <a href="/plaquette zenurri palms.pdf" download aria-label="Download brochure">
               <Button className="btn-primary rounded-md">{t("cta.brochure")}</Button>
             </a>
           </div>
@@ -315,7 +315,7 @@ const Header = () => {
                 </div>
 
                 {/* CTA Button */}
-                <a href="/brochure.pdf" download aria-label="Download brochure" className="w-full">
+                <a href="/plaquette zenurri palms.pdf" download aria-label="Download brochure" className="w-full">
                   <Button className="btn-primary rounded-md w-full mt-4">{t("cta.brochure")}</Button>
                 </a>
               </div>
