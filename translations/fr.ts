@@ -43,7 +43,7 @@ export default {
   "features.main_delivery": "Livraison: T4-2025",
 
   "about.title": "À propos de Zenurri Palms",
-  "about.subtitle": "Être Bien Chez Soi, C'est Vivre Au Lieu D'exister.",
+  "about.subtitle": "Être Bien Chez toi, C'est Vivre Au Lieu D'exister.",
   "about.description":
     "Chez Zenurri palms, nous croyons que vivre entre luxe et liberté est le mode de vie ultime. C'est pourquoi nous nous spécialisons dans la construction de propriétés exceptionnelles à nos clients qui offrent à la fois luxe et liberté.",
   "about.contact": "Contactez-nous",
