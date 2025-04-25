@@ -85,7 +85,7 @@ const Hero = () => {
             <Button className="btn-primary rounded-md" onClick={() => (window.location.href = "/contact")}>
               {t("hero.contact")}
             </Button>
-            <a href="/brochure.pdf" download aria-label="Download brochure">
+            <a href="plaquette zenurri palms.pdf" download aria-label="Download brochure">
               <Button
                 variant="outline"
                 className="bg-transparent text-white border-white hover:bg-white hover:text-black rounded-md"
