@@ -22,7 +22,7 @@ export default function ContactInfo() {
     {
       icon: <Mail className="text-primary" size={24} />,
       title: t("contact.email_title"),
-      details: ["contact@zenurri.com"],
+      details: ["Zenurripalms.contact@gmail.com"],
     },
     {
       icon: <Clock className="text-primary" size={24} />,
