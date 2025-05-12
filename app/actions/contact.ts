@@ -54,8 +54,8 @@ export async function sendContactEmail(formData: FormData) {
 
     // Prepare email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM || "noreply@zenurripalms.com",
-      to: process.env.EMAIL_TO || "contact@zenurripalms.com",
+      from: process.env.EMAIL_FROM || "noreply@zenurri.com",
+      to: process.env.EMAIL_TO || "contact@zenurri.com",
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       text: `

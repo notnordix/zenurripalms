@@ -7,14 +7,14 @@ export default {
 
   "hero.location": "مراكش، المغرب",
   "hero.title": "طريق أوريكا",
-  "hero.price": "ابتداءً من 700,000 يورو",
+  "hero.price": "اتصل بنا للحصول على الأسعار",
   "hero.contact": "اتصل بنا",
   "hero.brochure": "احصل على الكتيب",
   "hero.location_label": "الموقع",
   "hero.area_label": "المساحة / الفيلا",
   "hero.area_value": "1000 متر مربع",
   "hero.delivery_label": "التسليم",
-  "hero.delivery_value": "الربع الرابع 2025",
+  "hero.delivery_value": "2026",
 
   "features.title": "المميزات",
   "features.subtitle": "فلل مصممة للتميز",
@@ -40,7 +40,7 @@ export default {
   "features.main_luxury": "فلل فاخرة",
   "features.main_secure": "آمن",
   "features.main_eco": "صديق للبيئة",
-  "features.main_delivery": "التسليم: الربع الرابع 2025",
+  "features.main_delivery": "التسليم: 2026",
 
   "about.title": "عن زينوري بالمز",
   "about.subtitle": "أن تكون بخير في منزلك يعني أن تعيش بدلاً من مجرد الوجود.",

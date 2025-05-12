@@ -7,14 +7,14 @@ export default {
 
   "hero.location": "Marrakech, Maroc",
   "hero.title": "Route d'Ourika",
-  "hero.price": "à partir de 700 000 €",
+  "hero.price": "Contactez-nous pour les tarifs",
   "hero.contact": "Contactez-nous",
   "hero.brochure": "Recevoir la brochure",
   "hero.location_label": "Emplacement",
   "hero.area_label": "Superficie / Villa",
   "hero.area_value": "1 000 m²",
   "hero.delivery_label": "Livraison",
-  "hero.delivery_value": "T4 2025",
+  "hero.delivery_value": "2026",
 
   "features.title": "Caractéristiques",
   "features.subtitle": "Des villas conçues pour l'excellence",
@@ -40,7 +40,7 @@ export default {
   "features.main_luxury": "Villas de luxe",
   "features.main_secure": "Sécurisé",
   "features.main_eco": "Écologique",
-  "features.main_delivery": "Livraison: T4-2025",
+  "features.main_delivery": "Livraison: 2026",
 
   "about.title": "À propos de Zenurri Palms",
   "about.subtitle": "Être Bien Chez toi, C'est Vivre Au Lieu D'exister.",

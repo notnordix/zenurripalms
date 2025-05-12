@@ -7,14 +7,14 @@ export default {
 
   "hero.location": "Marrakech, Morocco",
   "hero.title": "Ourika Road",
-  "hero.price": "starting at €700,000",
+  "hero.price": "Contact us for pricing",
   "hero.contact": "Contact Us",
   "hero.brochure": "Get the brochure",
   "hero.location_label": "Location",
   "hero.area_label": "Area / Villa",
   "hero.area_value": "1,000 sq.m",
   "hero.delivery_label": "Delivery",
-  "hero.delivery_value": "Q4 2025",
+  "hero.delivery_value": "2026",
 
   "features.title": "Features",
   "features.subtitle": "Villas designed for excellence",
@@ -40,7 +40,7 @@ export default {
   "features.main_luxury": "Luxury villas",
   "features.main_secure": "Secure",
   "features.main_eco": "Eco-friendly",
-  "features.main_delivery": "Delivery: Q4-2025",
+  "features.main_delivery": "Delivery: 2026",
 
   "about.title": "About Zenurri Palms",
   "about.subtitle": "Being Well at Home Means Living Instead of Just Existing.",

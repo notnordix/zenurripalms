@@ -85,7 +85,7 @@ const Stats = () => {
     },
     {
       icon: <CalendarClock size={24} />,
-      value: 2025,
+      value: 2026,
       label: t("stats.delivery"),
       color: "bg-rose-100 text-rose-600",
     },

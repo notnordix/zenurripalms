@@ -104,10 +104,10 @@ const Footer = () => {
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:contact@zenurripalms.com"
+                  href="mailto:contact@zenurri.com"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  contact@zenurripalms.com
+                  contact@zenurri.com
                 </a>
               </li>
             </ul>
